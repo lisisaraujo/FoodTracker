@@ -9,22 +9,18 @@ import SwiftUI
 
 struct EntryView: View {
     var entry: Entry
-    var action: () -> Void
-
+    
     var body: some View {
         HStack {
-            Button(action: action) {
-                HStack {
-                    Image(systemName: entry.iconImage)
-                        .tint(iconColor(for: entry.entryType))
-                    
-                    Text(entry.title)
-                    Spacer()
-                    Text("\(entry.calories) kcal")
-                        .font(.caption2)
-                }
-                }
-            .buttonStyle(PlainButtonStyle())
+            HStack {
+                Image(systemName: entry.iconImage)
+                    .tint(iconColor(for: entry.entryType))
+                
+                Text(entry.title)
+                Spacer()
+                Text("\(entry.calories) kcal")
+                    .font(.caption2)
+            }
         }    }
     
     private func iconColor(for entryType: EntryType) -> Color {
@@ -40,7 +36,5 @@ struct EntryView: View {
 }
 
 #Preview {
-    EntryView(entry: Entry(entryType: .Snack, title: "Protein Bar", date: Date(), calories: 450), action: {
-        print("Button tapped!")
-    })
+    EntryView(entry: Entry(entryType: .Snack, title: "Protein Bar", date: Date(), calories: 450))
 }

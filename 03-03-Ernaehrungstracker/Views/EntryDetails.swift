@@ -13,15 +13,15 @@ struct EntryDetails: View {
     
     var body: some View {
         VStack {
-            Image(systemName: entry.)
+                    Image(systemName: selectedEntry.iconImage)
                         .resizable()
                         .frame(width: 100, height: 100)
                         .tint(.yellow)
-                    Text(entry.title)
+                    Text(selectedEntry.title)
                         .font(.title)
                         .foregroundColor(.blue)
-                    Text("Added on: \(entry.date.formatted())")
-                    Text("Calories: \(entry.calories)")
+                    Text("Added on: \(selectedEntry.date.formatted())")
+                    Text("Calories: \(selectedEntry.calories)")
             
             LazyVGrid(columns: [GridItem()]) {
                 Text("Comment:")
@@ -30,7 +30,7 @@ struct EntryDetails: View {
                     .padding(.bottom, 5)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                if let existingComment = entry.comment, !existingComment.isEmpty {
+                if let existingComment = selectedEntry.comment, !existingComment.isEmpty {
                     Text(existingComment)
                         .padding()
                         .background(Color.gray.opacity(0.1))
@@ -44,6 +44,9 @@ struct EntryDetails: View {
                         .cornerRadius(8)
                         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
                         .padding(.vertical, 10)
+                        .onSubmit() {
+                            selectedEntry.comment = comment
+                        }
                 }
             }
             .padding()
@@ -51,10 +54,10 @@ struct EntryDetails: View {
             .cornerRadius(12)
             .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 5)
             
-        }
+        }.navigationTitle(selectedEntry.title)
     }
 }
 
 #Preview {
-    EntryDetails(entry: Entry(entryType: .Meal, title: "Tapioca with cheese", date: Date(), calories: 680, comment: "Hello"))
+    EntryDetails(selectedEntry: .constant(Entry(entryType: .Meal, title: "Tapioca with cheese", date: Date(), calories: 680, comment: "Hello")))
 }

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AddNewEntryView: View {
-    @Binding var showAddSheet: Bool
     @Binding var newEntryName: String
     @Binding var newEntryCalories: Int
     @Binding var entries: [Entry]
@@ -32,11 +31,11 @@ struct AddNewEntryView: View {
                     ButtonView(title: "Add", action: {
                         let newEntry = Entry(entryType: selectedEntryType, title: newEntryName, date: Date(), calories: newEntryCalories)
                         entries.append(newEntry)
-                        showAddSheet = false
+                      
                     }, color: .blue)
                     
                     ButtonView(title: "Cancel", action: {
-                        showAddSheet = false
+                       
                     }, color: .red)
                 }
             }
@@ -47,5 +46,5 @@ struct AddNewEntryView: View {
 }
 
 #Preview {
-    AddNewEntryView(showAddSheet: .constant(true), newEntryName: .constant(""), newEntryCalories: .constant(0), entries: .constant([]), selectedEntryType: .constant(.Meal))
+    AddNewEntryView(newEntryName: .constant(""), newEntryCalories: .constant(0), entries: .constant([]), selectedEntryType: .constant(.Meal))
 }

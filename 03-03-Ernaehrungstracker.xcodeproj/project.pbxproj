@@ -14,6 +14,9 @@
 		A750CC5B2C871B33003A4B0C /* AddNewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */; };
 		A750CC5D2C871DB3003A4B0C /* EntryTypeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */; };
 		A750CC5F2C873D8F003A4B0C /* EntryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */; };
+		A750CC672C886A25003A4B0C /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC662C886A25003A4B0C /* HomeTabView.swift */; };
+		A750CC692C886AE2003A4B0C /* CaloriesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC682C886AE2003A4B0C /* CaloriesOverviewView.swift */; };
+		A750CC6C2C88909D003A4B0C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC6B2C88909D003A4B0C /* Utils.swift */; };
 		DB4097042C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4097032C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift */; };
 		DB4097062C81FCE2007AA461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4097052C81FCE2007AA461 /* ContentView.swift */; };
 		DB4097082C81FCE3007AA461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4097072C81FCE3007AA461 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntryView.swift; sourceTree = "<group>"; };
 		A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTypeSelectView.swift; sourceTree = "<group>"; };
 		A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetails.swift; sourceTree = "<group>"; };
+		A750CC662C886A25003A4B0C /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		A750CC682C886AE2003A4B0C /* CaloriesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesOverviewView.swift; sourceTree = "<group>"; };
+		A750CC6B2C88909D003A4B0C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DB4097002C81FCE2007AA461 /* 03-03-Ernaehrungstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-03-Ernaehrungstracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4097032C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_03_ErnaehrungstrackerApp.swift; sourceTree = "<group>"; };
 		DB4097052C81FCE2007AA461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,8 +69,18 @@
 				A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */,
 				A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */,
 				A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */,
+				A750CC662C886A25003A4B0C /* HomeTabView.swift */,
+				A750CC682C886AE2003A4B0C /* CaloriesOverviewView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A750CC6A2C88908F003A4B0C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A750CC6B2C88909D003A4B0C /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DB4096F72C81FCE2007AA461 = {
@@ -86,6 +102,7 @@
 		DB4097022C81FCE2007AA461 /* 03-03-Ernaehrungstracker */ = {
 			isa = PBXGroup;
 			children = (
+				A750CC6A2C88908F003A4B0C /* Utils */,
 				A750CC4D2C85CDFF003A4B0C /* Views */,
 				A750CC4A2C85CC12003A4B0C /* Models */,
 				DB4097032C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift */,
@@ -181,8 +198,11 @@
 				A750CC5D2C871DB3003A4B0C /* EntryTypeSelectView.swift in Sources */,
 				A750CC512C85EE74003A4B0C /* EntryView.swift in Sources */,
 				A750CC5B2C871B33003A4B0C /* AddNewEntryView.swift in Sources */,
+				A750CC672C886A25003A4B0C /* HomeTabView.swift in Sources */,
+				A750CC692C886AE2003A4B0C /* CaloriesOverviewView.swift in Sources */,
 				DB4097042C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift in Sources */,
 				A750CC4F2C85CE90003A4B0C /* EntryListView.swift in Sources */,
+				A750CC6C2C88909D003A4B0C /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

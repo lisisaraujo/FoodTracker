@@ -12,6 +12,7 @@ struct ButtonView: View {
     var action: () -> Void
     var color: Color = .blue
     
+    
     var body: some View {
         Button(action: action) {
             Text(title)
