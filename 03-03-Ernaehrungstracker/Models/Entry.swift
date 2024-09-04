@@ -13,6 +13,7 @@ struct Entry: Identifiable {
     var title: String
     var date: Date
     var calories: Int
+    var comment: String? 
     //computed property to return the icon based on entry type
     var iconImage: String {
         switch entryType {
@@ -26,8 +27,11 @@ struct Entry: Identifiable {
     }
     
 }
-enum EntryType {
-    case Drink
-    case Snack
-    case Meal
+
+enum EntryType: String, CaseIterable, Identifiable {
+    case Drink = "Drink"
+    case Snack = "Snack"
+    case Meal = "Meal"
+    
+    var id: String { self.rawValue }
 }

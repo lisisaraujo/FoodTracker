@@ -10,6 +10,10 @@
 		A750CC4C2C85CC28003A4B0C /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC4B2C85CC28003A4B0C /* Entry.swift */; };
 		A750CC4F2C85CE90003A4B0C /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC4E2C85CE90003A4B0C /* EntryListView.swift */; };
 		A750CC512C85EE74003A4B0C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC502C85EE74003A4B0C /* EntryView.swift */; };
+		A750CC592C871836003A4B0C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC582C871836003A4B0C /* ButtonView.swift */; };
+		A750CC5B2C871B33003A4B0C /* AddNewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */; };
+		A750CC5D2C871DB3003A4B0C /* EntryTypeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */; };
+		A750CC5F2C873D8F003A4B0C /* EntryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */; };
 		DB4097042C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4097032C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift */; };
 		DB4097062C81FCE2007AA461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4097052C81FCE2007AA461 /* ContentView.swift */; };
 		DB4097082C81FCE3007AA461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4097072C81FCE3007AA461 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 		A750CC4B2C85CC28003A4B0C /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		A750CC4E2C85CE90003A4B0C /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
 		A750CC502C85EE74003A4B0C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		A750CC582C871836003A4B0C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntryView.swift; sourceTree = "<group>"; };
+		A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTypeSelectView.swift; sourceTree = "<group>"; };
+		A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetails.swift; sourceTree = "<group>"; };
 		DB4097002C81FCE2007AA461 /* 03-03-Ernaehrungstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-03-Ernaehrungstracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4097032C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_03_ErnaehrungstrackerApp.swift; sourceTree = "<group>"; };
 		DB4097052C81FCE2007AA461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 			children = (
 				A750CC4E2C85CE90003A4B0C /* EntryListView.swift */,
 				A750CC502C85EE74003A4B0C /* EntryView.swift */,
+				A750CC582C871836003A4B0C /* ButtonView.swift */,
+				A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */,
+				A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */,
+				A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A750CC4C2C85CC28003A4B0C /* Entry.swift in Sources */,
+				A750CC5F2C873D8F003A4B0C /* EntryDetails.swift in Sources */,
 				DB4097062C81FCE2007AA461 /* ContentView.swift in Sources */,
+				A750CC592C871836003A4B0C /* ButtonView.swift in Sources */,
+				A750CC5D2C871DB3003A4B0C /* EntryTypeSelectView.swift in Sources */,
 				A750CC512C85EE74003A4B0C /* EntryView.swift in Sources */,
+				A750CC5B2C871B33003A4B0C /* AddNewEntryView.swift in Sources */,
 				DB4097042C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift in Sources */,
 				A750CC4F2C85CE90003A4B0C /* EntryListView.swift in Sources */,
 			);
