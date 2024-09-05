@@ -10,6 +10,14 @@ struct ContentView: View {
         Entry(entryType: .Meal, title: "Salad with eggs", date: Date().addingTimeInterval(-172800), calories: 400)
     ]
     
+    @State var liquidEntries: [Drink] = [
+        Drink(date: Date(), amount: 300, type: .Water),
+        Drink(date: Date(), amount: 600, type: .Water),
+        Drink(date: Date().addingTimeInterval(-86400), amount: 250, type: .Tea),
+        Drink(date: Date().addingTimeInterval(-86400), amount: 200, type: .Juice),
+        Drink(date: Date().addingTimeInterval(-86400), amount: 300, type: .Water)
+    ]
+    
     @State var showAlert = false
     @State var showAddSheet = false
     @State var newEntryName: String = ""
@@ -17,14 +25,11 @@ struct ContentView: View {
     @State var selectedEntryType: EntryType = .Drink
     @State var showEntryDetailsSheet = false
     @State var selectedEntry: Entry?
-    
-    
-    
-    
+    @State var liquidAmount: Int = 0
+
     var body: some View {
-        
-        HomeTabView(entries: $entries, selectedEntry: Entry(entryType: .Meal, title: "Tomato Salad", date: Date().addingTimeInterval(-86400), calories: 340))
-    }
+        HomeTabView(entries: $entries, liquidEntries: $liquidEntries, selectedEntry: Entry(entryType: .Meal, title: "Tomato Salad", date: Date().addingTimeInterval(-86400), calories: 340))
+        }
 }
 
 

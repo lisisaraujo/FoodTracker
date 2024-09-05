@@ -35,7 +35,7 @@ struct AddNewEntryView: View {
                     }, color: .blue)
                     
                     ButtonView(title: "Cancel", action: {
-                       
+                        
                     }, color: .red)
                 }
             }

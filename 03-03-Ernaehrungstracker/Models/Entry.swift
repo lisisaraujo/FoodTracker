@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Entry: Identifiable {
+struct Entry: Identifiable, Hashable {
     let id: UUID = UUID()
     var entryType: EntryType
     var title: String

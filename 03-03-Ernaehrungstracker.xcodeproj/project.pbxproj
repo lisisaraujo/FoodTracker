@@ -17,6 +17,12 @@
 		A750CC672C886A25003A4B0C /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC662C886A25003A4B0C /* HomeTabView.swift */; };
 		A750CC692C886AE2003A4B0C /* CaloriesOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC682C886AE2003A4B0C /* CaloriesOverviewView.swift */; };
 		A750CC6C2C88909D003A4B0C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A750CC6B2C88909D003A4B0C /* Utils.swift */; };
+		A7B893472C89B7360052AF07 /* WaterTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B893462C89B7360052AF07 /* WaterTrackView.swift */; };
+		A7B893492C89BBA40052AF07 /* AddLiquidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B893482C89BBA40052AF07 /* AddLiquidView.swift */; };
+		A7B8934B2C89BF100052AF07 /* LiquidEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8934A2C89BF100052AF07 /* LiquidEntryView.swift */; };
+		A7D5B9082C89AAFB008EA6B6 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B9072C89AAFB008EA6B6 /* Drink.swift */; };
+		A7D5B90A2C89ABD9008EA6B6 /* DailyDrinkGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B9092C89ABD9008EA6B6 /* DailyDrinkGoal.swift */; };
+		A7D5B90C2C89B3DF008EA6B6 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B90B2C89B3DF008EA6B6 /* NavigationDestination.swift */; };
 		DB4097042C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4097032C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift */; };
 		DB4097062C81FCE2007AA461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4097052C81FCE2007AA461 /* ContentView.swift */; };
 		DB4097082C81FCE3007AA461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4097072C81FCE3007AA461 /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 		A750CC662C886A25003A4B0C /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		A750CC682C886AE2003A4B0C /* CaloriesOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesOverviewView.swift; sourceTree = "<group>"; };
 		A750CC6B2C88909D003A4B0C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A7B893462C89B7360052AF07 /* WaterTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackView.swift; sourceTree = "<group>"; };
+		A7B893482C89BBA40052AF07 /* AddLiquidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLiquidView.swift; sourceTree = "<group>"; };
+		A7B8934A2C89BF100052AF07 /* LiquidEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidEntryView.swift; sourceTree = "<group>"; };
+		A7D5B9072C89AAFB008EA6B6 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		A7D5B9092C89ABD9008EA6B6 /* DailyDrinkGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDrinkGoal.swift; sourceTree = "<group>"; };
+		A7D5B90B2C89B3DF008EA6B6 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
 		DB4097002C81FCE2007AA461 /* 03-03-Ernaehrungstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-03-Ernaehrungstracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4097032C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_03_ErnaehrungstrackerApp.swift; sourceTree = "<group>"; };
 		DB4097052C81FCE2007AA461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				A750CC4B2C85CC28003A4B0C /* Entry.swift */,
+				A7D5B9072C89AAFB008EA6B6 /* Drink.swift */,
+				A7D5B9092C89ABD9008EA6B6 /* DailyDrinkGoal.swift */,
+				A7D5B90B2C89B3DF008EA6B6 /* NavigationDestination.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -63,14 +78,14 @@
 		A750CC4D2C85CDFF003A4B0C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7B8934C2C89DEC00052AF07 /* SubViews */,
 				A750CC4E2C85CE90003A4B0C /* EntryListView.swift */,
-				A750CC502C85EE74003A4B0C /* EntryView.swift */,
-				A750CC582C871836003A4B0C /* ButtonView.swift */,
-				A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */,
-				A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */,
-				A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */,
 				A750CC662C886A25003A4B0C /* HomeTabView.swift */,
+				A750CC5A2C871B33003A4B0C /* AddNewEntryView.swift */,
+				A750CC5E2C873D8F003A4B0C /* EntryDetails.swift */,
 				A750CC682C886AE2003A4B0C /* CaloriesOverviewView.swift */,
+				A7B893462C89B7360052AF07 /* WaterTrackView.swift */,
+				A7B893482C89BBA40052AF07 /* AddLiquidView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -81,6 +96,17 @@
 				A750CC6B2C88909D003A4B0C /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A7B8934C2C89DEC00052AF07 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A750CC502C85EE74003A4B0C /* EntryView.swift */,
+				A7B8934A2C89BF100052AF07 /* LiquidEntryView.swift */,
+				A750CC5C2C871DB3003A4B0C /* EntryTypeSelectView.swift */,
+				A750CC582C871836003A4B0C /* ButtonView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		DB4096F72C81FCE2007AA461 = {
@@ -193,14 +219,20 @@
 			files = (
 				A750CC4C2C85CC28003A4B0C /* Entry.swift in Sources */,
 				A750CC5F2C873D8F003A4B0C /* EntryDetails.swift in Sources */,
+				A7B893472C89B7360052AF07 /* WaterTrackView.swift in Sources */,
 				DB4097062C81FCE2007AA461 /* ContentView.swift in Sources */,
 				A750CC592C871836003A4B0C /* ButtonView.swift in Sources */,
+				A7D5B90C2C89B3DF008EA6B6 /* NavigationDestination.swift in Sources */,
 				A750CC5D2C871DB3003A4B0C /* EntryTypeSelectView.swift in Sources */,
+				A7D5B90A2C89ABD9008EA6B6 /* DailyDrinkGoal.swift in Sources */,
+				A7B893492C89BBA40052AF07 /* AddLiquidView.swift in Sources */,
 				A750CC512C85EE74003A4B0C /* EntryView.swift in Sources */,
 				A750CC5B2C871B33003A4B0C /* AddNewEntryView.swift in Sources */,
+				A7D5B9082C89AAFB008EA6B6 /* Drink.swift in Sources */,
 				A750CC672C886A25003A4B0C /* HomeTabView.swift in Sources */,
 				A750CC692C886AE2003A4B0C /* CaloriesOverviewView.swift in Sources */,
 				DB4097042C81FCE2007AA461 /* _3_03_ErnaehrungstrackerApp.swift in Sources */,
+				A7B8934B2C89BF100052AF07 /* LiquidEntryView.swift in Sources */,
 				A750CC4F2C85CE90003A4B0C /* EntryListView.swift in Sources */,
 				A750CC6C2C88909D003A4B0C /* Utils.swift in Sources */,
 			);
