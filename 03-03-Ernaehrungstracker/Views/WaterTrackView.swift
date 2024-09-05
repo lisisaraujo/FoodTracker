@@ -12,7 +12,7 @@ struct WaterTrackView: View {
     @State var showAlert = false
     @State var liquidSelection: DrinkType = .Water
     @State var path = NavigationPath()
-    @State private var selectedDate = Date() 
+    @State private var selectedDate = Date()
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -36,7 +36,9 @@ struct WaterTrackView: View {
                         
                         Spacer()
                         
-                        NavigationLink(destination: AddLiquidView(liquidSelection: $liquidSelection, liquidEntries: $liquidEntries)) {
+                        Button(action: {
+                            path.append(NavigationDestination.addLiquid)
+                        }) {
                             Image(systemName: "plus")
                                 .foregroundColor(.blue)
                         }
@@ -64,18 +66,24 @@ struct WaterTrackView: View {
                                 }) {
                                     LiquidEntryView(liquidEntry: liquid)
                                 }
-                                .navigationDestination(for: Drink.self) { drink in
-                                    LiquidEntryView(liquidEntry: drink)
-                                }
                             }
                         }
                     }
                 }
             }
-        
+            .navigationDestination(for: Drink.self) { drink in
+                LiquidEntryView(liquidEntry: drink)
+            }
+            .navigationDestination(for: NavigationDestination.self) { destination in
+                switch destination {
+                case .addLiquid:
+                    AddLiquidView(liquidSelection: $liquidSelection, liquidEntries: $liquidEntries, path: $path)
+                }
+            }
         }
     }
 }
+
 
 #Preview {
     WaterTrackView(liquidEntries: .constant([

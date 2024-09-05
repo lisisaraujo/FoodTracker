@@ -9,5 +9,4 @@ import Foundation
 
 enum NavigationDestination: Hashable {
     case addLiquid
-    case waterTrack
 }
