@@ -13,6 +13,9 @@ struct WaterTrackView: View {
     @State var liquidSelection: DrinkType = .Water
     @State var path = NavigationPath()
     @State private var selectedDate = Date()
+    @State var dailyGoal = DailyDrinkGoal(date: Date(), goalAmount: 2000, drinks: [])
+    @State var openAddDrinkGoalSheet = false
+    @Binding var dailyDrinkGoals: [DailyDrinkGoal]
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -42,6 +45,12 @@ struct WaterTrackView: View {
                             Image(systemName: "plus")
                                 .foregroundColor(.blue)
                         }
+                        
+                        Button("Add Daily Goal"){
+                        openAddDrinkGoalSheet = true
+                        }.sheet(isPresented: $openAddDrinkGoalSheet, content: {
+                            AddDailyDrinkGoal(dailyGoal: $dailyGoal, dailyDrinkGoals: $dailyDrinkGoals)
+                        })
                     }
                     .padding()
                     
@@ -69,6 +78,7 @@ struct WaterTrackView: View {
                             }
                         }
                     }
+          
                 }
             }
             .navigationDestination(for: Drink.self) { drink in
@@ -92,5 +102,5 @@ struct WaterTrackView: View {
         Drink(date: Date().addingTimeInterval(-86400), amount: 250, type: .Tea),
         Drink(date: Date().addingTimeInterval(-86400), amount: 200, type: .Juice),
         Drink(date: Date().addingTimeInterval(-86400), amount: 300, type: .Water)
-    ]))
+    ]), dailyDrinkGoals: .constant([DailyDrinkGoal(date: Date().addingTimeInterval(-86400), goalAmount: 4500.0, drinks: [Drink(amount: 500, type: .Juice)]), DailyDrinkGoal(date: Date().addingTimeInterval(-86400), goalAmount: 4500.0, drinks: [Drink(amount: 3500, type: .Water)]), DailyDrinkGoal(date: Date(), goalAmount: 3500.0, drinks: [Drink(amount: 350, type: .Tea)])]))
 }

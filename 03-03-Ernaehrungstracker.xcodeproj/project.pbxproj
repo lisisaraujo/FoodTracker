@@ -20,6 +20,7 @@
 		A7B893472C89B7360052AF07 /* WaterTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B893462C89B7360052AF07 /* WaterTrackView.swift */; };
 		A7B893492C89BBA40052AF07 /* AddLiquidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B893482C89BBA40052AF07 /* AddLiquidView.swift */; };
 		A7B8934B2C89BF100052AF07 /* LiquidEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8934A2C89BF100052AF07 /* LiquidEntryView.swift */; };
+		A7B8934E2C8B0CB40052AF07 /* AddDailyDrinkGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B8934D2C8B0CB40052AF07 /* AddDailyDrinkGoal.swift */; };
 		A7D5B9082C89AAFB008EA6B6 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B9072C89AAFB008EA6B6 /* Drink.swift */; };
 		A7D5B90A2C89ABD9008EA6B6 /* DailyDrinkGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B9092C89ABD9008EA6B6 /* DailyDrinkGoal.swift */; };
 		A7D5B90C2C89B3DF008EA6B6 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D5B90B2C89B3DF008EA6B6 /* NavigationDestination.swift */; };
@@ -43,6 +44,7 @@
 		A7B893462C89B7360052AF07 /* WaterTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTrackView.swift; sourceTree = "<group>"; };
 		A7B893482C89BBA40052AF07 /* AddLiquidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLiquidView.swift; sourceTree = "<group>"; };
 		A7B8934A2C89BF100052AF07 /* LiquidEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidEntryView.swift; sourceTree = "<group>"; };
+		A7B8934D2C8B0CB40052AF07 /* AddDailyDrinkGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDailyDrinkGoal.swift; sourceTree = "<group>"; };
 		A7D5B9072C89AAFB008EA6B6 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		A7D5B9092C89ABD9008EA6B6 /* DailyDrinkGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDrinkGoal.swift; sourceTree = "<group>"; };
 		A7D5B90B2C89B3DF008EA6B6 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A750CC682C886AE2003A4B0C /* CaloriesOverviewView.swift */,
 				A7B893462C89B7360052AF07 /* WaterTrackView.swift */,
 				A7B893482C89BBA40052AF07 /* AddLiquidView.swift */,
+				A7B8934D2C8B0CB40052AF07 /* AddDailyDrinkGoal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				A7B8934B2C89BF100052AF07 /* LiquidEntryView.swift in Sources */,
 				A750CC4F2C85CE90003A4B0C /* EntryListView.swift in Sources */,
 				A750CC6C2C88909D003A4B0C /* Utils.swift in Sources */,
+				A7B8934E2C8B0CB40052AF07 /* AddDailyDrinkGoal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

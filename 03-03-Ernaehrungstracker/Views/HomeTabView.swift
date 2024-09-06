@@ -14,6 +14,7 @@ struct HomeTabView: View {
     @Binding var entries: [Entry]
     @Binding var liquidEntries: [Drink]
     @State var selectedEntry: Entry
+    @Binding var dailyDrinkGoals: [DailyDrinkGoal]
 
     
     var body: some View {
@@ -30,7 +31,7 @@ struct HomeTabView: View {
                 }
                 .tag(2)
             
-            WaterTrackView(liquidEntries: $liquidEntries)
+            WaterTrackView(liquidEntries: $liquidEntries, dailyDrinkGoals: $dailyDrinkGoals)
                 .tabItem {
                     Label("Water", systemImage: "drop.fill")
                 }
@@ -46,5 +47,5 @@ struct HomeTabView: View {
         Entry(entryType: .Meal, title: "Chickpeas with rice", date: Date().addingTimeInterval(-86400), calories: 800),
         Entry(entryType: .Meal, title: "Tomato Salad", date: Date().addingTimeInterval(-86400), calories: 340),
         Entry(entryType: .Meal, title: "Salad with eggs", date: Date().addingTimeInterval(-172800), calories: 400)
-    ]), liquidEntries: .constant([Drink(amount: 300, type: .Water), Drink(amount: 600, type: .Water), Drink(amount: 250, type: .Tea), Drink(amount: 200, type: .Juice), Drink(amount: 300, type: .Water)]), selectedEntry: Entry(entryType: .Meal, title: "Tomato Salad", date: Date().addingTimeInterval(-86400), calories: 340))
+    ]), liquidEntries: .constant([Drink(amount: 300, type: .Water), Drink(amount: 600, type: .Water), Drink(amount: 250, type: .Tea), Drink(amount: 200, type: .Juice), Drink(amount: 300, type: .Water)]), selectedEntry: Entry(entryType: .Meal, title: "Tomato Salad", date: Date().addingTimeInterval(-86400), calories: 340), dailyDrinkGoals: .constant([DailyDrinkGoal(date: Date().addingTimeInterval(-86400), goalAmount: 4500.0, drinks: [Drink(amount: 500, type: .Juice)]), DailyDrinkGoal(date: Date().addingTimeInterval(-86400), goalAmount: 4500.0, drinks: [Drink(amount: 3500, type: .Water)]), DailyDrinkGoal(date: Date(), goalAmount: 3500.0, drinks: [Drink(amount: 350, type: .Tea)])]))
 }
